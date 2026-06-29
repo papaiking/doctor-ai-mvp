@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Gnixy doctor</string>
+    <string name="title_activity_main">Gnixy doctor</string>
+    <string name="package_name">com.gnixy.mydoctor</string>
+    <string name="custom_url_scheme">com.gnixy.mydoctor</string>
+</resources>

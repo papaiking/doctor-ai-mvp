@@ -1,0 +1,6 @@
+{
+  "name": "Gnixy Healthcare Voice AI",
+  "description": "A sophisticated healthcare voice AI agent for patient support and care coordination.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": []
+}
