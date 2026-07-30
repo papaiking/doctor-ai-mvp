@@ -1,7 +1,8 @@
 ---
 phase: 01
 slug: landing-page
-status: draft
+status: approved
+reviewed_at: 2026-07-30
 shadcn_initialized: false
 preset: none
 created: 2026-07-30
@@ -56,9 +57,9 @@ Tailwind v4 equivalent: `p-1` (4px), `p-2` (8px), `p-4` (16px), `p-6` (24px), `p
 | Heading (H2) | 28px | 600 (Semibold) | 1.2 | `text-2xl font-semibold` |
 | Display (H1) | 48px | 600 (Semibold) | 1.1 | `text-5xl font-semibold` |
 | CTA Button | 16px | 600 (Semibold) | 1 | `text-base font-semibold` |
-| Nav Link | 15px | 500 (Medium) | 1 | `text-[15px] font-medium` |
+| Nav Link | 16px | 600 (Semibold) | 1 | `text-base font-semibold` |
 
-Weight loading: Google Fonts imports weights 400, 500, 600, 700 per `display=swap`.
+Weight loading: Google Fonts imports weights 400, 600, 700 per `display=swap`.
 
 Line height defaults: Heading/Display use tighter 1.1–1.2. Body uses 1.5 for readability.
 
@@ -142,11 +143,11 @@ Accent reserved for: Primary CTA buttons (`#2563EB`), secondary CTA hover state,
 
 ## Checker Sign-Off
 
-- [ ] Dimension 1 Copywriting: PASS
-- [ ] Dimension 2 Visuals: PASS
-- [ ] Dimension 3 Color: PASS
-- [ ] Dimension 4 Typography: PASS
-- [ ] Dimension 5 Spacing: PASS
-- [ ] Dimension 6 Registry Safety: PASS
+- [x] Dimension 1 Copywriting: PASS
+- [x] Dimension 2 Visuals: FLAG (no explicit focal point — hero image is implicit anchor)
+- [x] Dimension 3 Color: PASS
+- [x] Dimension 4 Typography: PASS
+- [x] Dimension 5 Spacing: PASS
+- [x] Dimension 6 Registry Safety: PASS
 
-**Approval:** {pending / approved YYYY-MM-DD}
+**Approval:** approved 2026-07-30
