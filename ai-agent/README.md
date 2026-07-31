@@ -37,7 +37,7 @@ uv run server.py
 
 For client-side setup, refer to the:
 
-- [Typescript Guide](client/README.md).
+- Websocket client: ws://localhost:7860/ws. In case of running behind reversed proxy, it become: ws://domain:port/ws
 
 ## ⚠️ Important Note
 
