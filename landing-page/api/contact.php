@@ -46,16 +46,15 @@ try {
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
     
-    // TODO: Replace with your actual Gmail address and App Password
-    $mail->Username   = 'YOUR_GMAIL_ACCOUNT@gmail.com'; 
-    $mail->Password   = 'YOUR_GMAIL_APP_PASSWORD'; 
+    $mail->Username   = 'contact@hearme.vn'; 
+    $mail->Password   = 'xxxxxxxxx'; 
     
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Enables SSL over port 465
     $mail->Port       = 465;
     $mail->CharSet    = 'UTF-8';
 
     // Sender
-    $mail->setFrom('YOUR_GMAIL_ACCOUNT@gmail.com', 'Doctor Genie');
+    $mail->setFrom('contact@hearme.vn', 'Gnixy');
     
     // Receivers: User (Submitter)
     $mail->addAddress($email, $name);
