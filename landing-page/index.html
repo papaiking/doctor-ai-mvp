@@ -63,9 +63,9 @@
                 Chúng tôi đang xây dựng hệ sinh thái AI chăm sóc sức khỏe thế hệ mới tại Việt Nam. Kết nối công nghệ với trái tim để bảo vệ sức khỏe mọi nhà.
             </p>
             <div class="flex flex-col sm:flex-row flex-wrap gap-4 pt-base">
-                <button onclick="openModal()" class="cursor-pointer bg-primary text-white px-6 md:px-lg py-md rounded-full text-[14px] font-semibold hover:shadow-xl transition-all hover:-translate-y-1 btn-pulse">🚀 Đồng hành sáng lập</button>
-                <button onclick="openModal()" class="cursor-pointer bg-white text-on-surface px-6 md:px-lg py-md rounded-full text-[14px] font-semibold shadow-sm hover:bg-surface-container-lowest transition-all interactive-element">🤝 Trở thành Đối tác</button>
-                <button onclick="openModal()" class="text-primary text-[14px] font-semibold flex items-center gap-xs hover:gap-sm transition-all group interactive-element cursor-pointer">
+                <button onclick="openModal('co-founder')" class="cursor-pointer bg-primary text-white px-6 md:px-lg py-md rounded-full text-[14px] font-semibold hover:shadow-xl transition-all hover:-translate-y-1 btn-pulse">🚀 Đồng hành sáng lập</button>
+                <button onclick="openModal('partner')" class="cursor-pointer bg-white text-on-surface px-6 md:px-lg py-md rounded-full text-[14px] font-semibold shadow-sm hover:bg-surface-container-lowest transition-all interactive-element">🤝 Trở thành Đối tác</button>
+                <button onclick="openModal('investor')" class="text-primary text-[14px] font-semibold flex items-center gap-xs hover:gap-sm transition-all group interactive-element cursor-pointer">
                     💰 Đồng hành đầu tư
                     <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
                 </button>
@@ -269,35 +269,35 @@
             <p class="text-[18px] text-on-surface-variant max-w-[42rem] mx-auto mt-2">Chúng tôi đang xây dựng cộng đồng của những bác sĩ, chuyên gia và những người yêu công nghệ cùng nhau thay đổi tương lai y tế Việt Nam.</p>
         </div>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-md stagger-item reveal-hidden" style="--stagger-idx: 2">
-            <div onclick="openModal()" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
+            <div onclick="openModal('partner')" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
                 <span class="material-symbols-outlined text-4xl text-primary mb-md group-hover:scale-110 transition-transform inline-block">medical_services</span>
                 <h3 class="text-[13px] md:text-[14px] font-semibold text-on-surface">Bác sĩ</h3>
             </div>
-            <div onclick="openModal()" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
+            <div onclick="openModal('advisor')" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
                 <span class="material-symbols-outlined text-4xl text-primary mb-md group-hover:scale-110 transition-transform inline-block">neurology</span>
                 <h3 class="text-[13px] md:text-[14px] font-semibold text-on-surface">Chuyên gia AI</h3>
             </div>
-            <div onclick="openModal()" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
+            <div onclick="openModal('advisor')" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
                 <span class="material-symbols-outlined text-4xl text-primary mb-md group-hover:scale-110 transition-transform inline-block">precision_manufacturing</span>
                 <h3 class="text-[13px] md:text-[14px] font-semibold text-on-surface">Chuyên gia Robotics</h3>
             </div>
-            <div onclick="openModal()" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
+            <div onclick="openModal('co-founder')" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
                 <span class="material-symbols-outlined text-4xl text-primary mb-md group-hover:scale-110 transition-transform inline-block">person_add</span>
                 <h3 class="text-[13px] md:text-[14px] font-semibold text-on-surface">Co-Founder</h3>
             </div>
-            <div onclick="openModal()" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
+            <div onclick="openModal('co-founder')" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
                 <span class="material-symbols-outlined text-4xl text-primary mb-md group-hover:scale-110 transition-transform inline-block">rocket_launch</span>
                 <h3 class="text-[13px] md:text-[14px] font-semibold text-on-surface">Startup Builder</h3>
             </div>
-            <div onclick="openModal()" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
+            <div onclick="openModal('partner')" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
                 <span class="material-symbols-outlined text-4xl text-primary mb-md group-hover:scale-110 transition-transform inline-block">domain</span>
                 <h3 class="text-[13px] md:text-[14px] font-semibold text-on-surface">Bệnh viện</h3>
             </div>
-            <div onclick="openModal()" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
+            <div onclick="openModal('partner')" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
                 <span class="material-symbols-outlined text-4xl text-primary mb-md group-hover:scale-110 transition-transform inline-block">school</span>
                 <h3 class="text-[13px] md:text-[14px] font-semibold text-on-surface">Trường Đại học</h3>
             </div>
-            <div onclick="openModal()" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
+            <div onclick="openModal('investor')" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
                 <span class="material-symbols-outlined text-4xl text-primary mb-md group-hover:scale-110 transition-transform inline-block">payments</span>
                 <h3 class="text-[13px] md:text-[14px] font-semibold text-on-surface">Nhà đầu tư</h3>
             </div>

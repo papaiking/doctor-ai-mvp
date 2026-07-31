@@ -118,10 +118,14 @@ document.querySelectorAll('.youtube-placeholder').forEach(el => {
 // Modal
 const modal = document.getElementById('cta-modal');
 
-function openModal() {
+function openModal(role) {
   if(modal) {
     modal.classList.add('open');
     document.body.style.overflow = 'hidden';
+    if (role) {
+      const roleSelect = modal.querySelector('select[name="role"]');
+      if (roleSelect) roleSelect.value = role;
+    }
   }
 }
 
