@@ -42,17 +42,35 @@ $mail->Password   = 'YOUR_GMAIL_APP_PASSWORD';
 
 To deploy this landing page to a production environment using Nginx and PHP-FPM:
 
-1. **Build the static assets:**
+### 1. Install Nginx and PHP FastCGI (PHP-FPM)
+
+If you haven't installed them yet, you can do so using your server's package manager.
+
+**For Ubuntu/Debian:**
+```bash
+sudo apt update
+sudo apt install nginx php-fpm
+```
+*(This will install the default PHP version for your OS, usually 8.1 or newer. Make sure to note the version for the Nginx config, e.g., `php8.1-fpm`)*
+
+**For CentOS/RHEL:**
+```bash
+sudo yum install epel-release
+sudo yum install nginx php-fpm
+sudo systemctl enable --now nginx php-fpm
+```
+
+### 2. Build the static assets:
    ```bash
    npm run build
    ```
    This generates the optimized static files in the `dist/` directory.
 
-2. **Prepare the deployment package:**
+### 3. Prepare the deployment package:
    - Copy the contents of the `dist/` directory to your web server's document root (e.g., `/var/www/doctor-genie`).
    - Copy the `api/` folder directly into the document root alongside the `dist` files.
 
-3. **Nginx Configuration:**
+### 4. Nginx Configuration:
    Configure your Nginx server block to serve the static HTML files and proxy `.php` requests to PHP-FPM.
 
    Example `nginx.conf`:
