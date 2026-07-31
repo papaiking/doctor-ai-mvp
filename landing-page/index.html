@@ -29,11 +29,11 @@
 
 <!-- Navigation -->
 <nav id="navbar" class="fixed top-0 w-full z-50 glass-nav h-20 transition-all duration-300">
-    <div class="flex justify-between items-center h-full px-margin-desktop max-w-[80rem] mx-auto">
+    <div class="flex justify-between items-center h-full px-5 md:px-margin-desktop max-w-[80rem] mx-auto">
         <div class="flex items-center gap-xs cursor-pointer interactive-element hover:opacity-80" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
             <img alt="Doctor Genie Logo" class="h-10 w-auto" src="/images/genie_logo.png">
         </div>
-        <div class="hidden lg:flex items-center gap-lg">
+        <div class="hidden lg:flex items-center gap-4 md:gap-lg">
             <a class="nav-link text-[16px] leading-[24px] text-on-surface-variant hover:text-primary transition-all duration-300" href="#ai-doctor">Bác sĩ AI</a>
             <a class="nav-link text-[16px] leading-[24px] text-on-surface-variant hover:text-primary transition-all duration-300" href="#my-doctor">My Doctor</a>
             <a class="nav-link text-[16px] leading-[24px] text-on-surface-variant hover:text-primary transition-all duration-300" href="#gnixy">Gnixy AI</a>
@@ -50,21 +50,21 @@
         <div class="w-full h-full bg-cover bg-center opacity-50" style="background-image: url('/images/hero.png');"></div>
         <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
     </div>
-    <div class="relative z-10 px-margin-desktop max-w-[80rem] mx-auto w-full">
+    <div class="relative z-10 px-5 md:px-margin-desktop max-w-[80rem] mx-auto w-full">
         <div class="max-w-[48rem] space-y-md reveal-hidden">
             <div class="inline-flex items-center gap-xs px-sm py-xs bg-primary/10 text-primary rounded-full text-[12px] font-semibold uppercase tracking-wider">
                 <span class="material-symbols-outlined text-[18px]">health_and_safety</span>
                 Doctor Genie | AI Healthcare Ecosystem
             </div>
-            <h1 class="text-[48px] font-bold leading-tight tracking-tight text-on-surface">
-                AI sẽ thay đổi cách <br><span class="text-gradient">chăm sóc sức khỏe.</span>
+            <h1 class="text-[36px] md:text-[48px] font-bold leading-tight tracking-tight text-on-surface">
+                AI sẽ thay đổi cách <br class="hidden sm:block"><span class="text-gradient">chăm sóc sức khỏe.</span>
             </h1>
             <p class="text-[18px] text-on-surface-variant max-w-[36rem]">
                 Chúng tôi đang xây dựng hệ sinh thái AI chăm sóc sức khỏe thế hệ mới tại Việt Nam. Kết nối công nghệ với trái tim để bảo vệ sức khỏe mọi nhà.
             </p>
-            <div class="flex flex-wrap gap-md pt-base">
-                <button onclick="openModal()" class="cursor-pointer bg-primary text-white px-lg py-md rounded-full text-[14px] font-semibold hover:shadow-xl transition-all hover:-translate-y-1 btn-pulse">🚀 Đồng hành sáng lập</button>
-                <button onclick="openModal()" class="cursor-pointer bg-white text-on-surface px-lg py-md rounded-full text-[14px] font-semibold shadow-sm hover:bg-surface-container-lowest transition-all interactive-element">🤝 Trở thành Đối tác</button>
+            <div class="flex flex-col sm:flex-row flex-wrap gap-4 pt-base">
+                <button onclick="openModal()" class="cursor-pointer bg-primary text-white px-6 md:px-lg py-md rounded-full text-[14px] font-semibold hover:shadow-xl transition-all hover:-translate-y-1 btn-pulse">🚀 Đồng hành sáng lập</button>
+                <button onclick="openModal()" class="cursor-pointer bg-white text-on-surface px-6 md:px-lg py-md rounded-full text-[14px] font-semibold shadow-sm hover:bg-surface-container-lowest transition-all interactive-element">🤝 Trở thành Đối tác</button>
                 <button onclick="openModal()" class="text-primary text-[14px] font-semibold flex items-center gap-xs hover:gap-sm transition-all group interactive-element cursor-pointer">
                     💰 Đồng hành đầu tư
                     <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
@@ -75,12 +75,12 @@
 </header>
 
 <!-- BÁC SĨ AI Section -->
-<section id="ai-doctor" class="py-xl bg-white reveal-hidden">
-    <div class="px-margin-desktop max-w-[80rem] mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+<section id="ai-doctor" class="py-12 md:py-xl bg-white reveal-hidden">
+    <div class="px-5 md:px-margin-desktop max-w-[80rem] mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-xl items-center">
             <div class="space-y-lg order-2 lg:order-1">
                 <div class="space-y-sm">
-                    <h2 class="text-[32px] font-semibold text-on-surface tracking-tight">Bác sĩ AI luôn đồng hành cùng bạn</h2>
+                    <h2 class="text-[24px] md:text-[32px] font-semibold text-on-surface tracking-tight">Bác sĩ AI luôn đồng hành cùng bạn</h2>
                     <div class="h-1 w-20 bg-primary rounded-full"></div>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
@@ -140,13 +140,13 @@
 </section>
 
 <!-- MY DOCTOR Section -->
-<section id="my-doctor" class="py-xl bg-surface-container-lowest reveal-hidden">
-    <div class="px-margin-desktop max-w-[80rem] mx-auto">
+<section id="my-doctor" class="py-12 md:py-xl bg-surface-container-lowest reveal-hidden">
+    <div class="px-5 md:px-margin-desktop max-w-[80rem] mx-auto">
         <div class="text-center max-w-[48rem] mx-auto mb-lg space-y-sm">
-            <h2 class="text-[32px] font-semibold text-on-surface tracking-tight">Chăm sóc sức khỏe cho cả gia đình</h2>
+            <h2 class="text-[24px] md:text-[32px] font-semibold text-on-surface tracking-tight">Chăm sóc sức khỏe cho cả gia đình</h2>
             <p class="text-[18px] text-on-surface-variant">Giải pháp chăm sóc y tế toàn diện từ thế hệ trẻ đến người cao tuổi.</p>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-xl items-center">
             <div class="youtube-placeholder video-container shadow-2xl group border border-outline-variant/50" data-video="kfEQjXrW6uk">
                 <img src="/images/thumb_my-doctor.png" alt="My Doctor Demo" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
                 <div class="play-button absolute inset-0 flex items-center justify-center">
@@ -154,7 +154,7 @@
                 </div>
             </div>
             <div class="grid grid-cols-1 gap-md">
-                <div class="glass-card p-lg rounded-2xl flex items-center gap-lg hover-lift stagger-item reveal-hidden" style="--stagger-idx: 1">
+                <div class="glass-card p-6 md:p-lg rounded-2xl flex items-center gap-4 md:gap-lg hover-lift stagger-item reveal-hidden" style="--stagger-idx: 1">
                     <div class="w-16 h-16 flex-shrink-0 bg-primary text-white rounded-full flex items-center justify-center">
                         <span class="material-symbols-outlined text-4xl">smart_toy</span>
                     </div>
@@ -163,7 +163,7 @@
                         <p class="text-[16px] text-on-surface-variant">Người bạn thông minh hiểu rõ sức khỏe của bạn nhất.</p>
                     </div>
                 </div>
-                <div class="glass-card p-lg rounded-2xl flex items-center gap-lg hover-lift stagger-item reveal-hidden" style="--stagger-idx: 2">
+                <div class="glass-card p-6 md:p-lg rounded-2xl flex items-center gap-4 md:gap-lg hover-lift stagger-item reveal-hidden" style="--stagger-idx: 2">
                     <div class="w-16 h-16 flex-shrink-0 bg-secondary text-on-secondary rounded-full flex items-center justify-center">
                         <span class="material-symbols-outlined text-4xl">folder_shared</span>
                     </div>
@@ -172,7 +172,7 @@
                         <p class="text-[16px] text-on-surface-variant">Số hóa toàn bộ lịch sử y tế, truy cập mọi lúc mọi nơi.</p>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 gap-md pt-base">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-md pt-base">
                     <div class="p-md bg-white rounded-xl shadow-sm border border-outline-variant/30 text-center hover-lift interactive-element stagger-item reveal-hidden" style="--stagger-idx: 3">
                         <span class="material-symbols-outlined text-primary mb-sm text-3xl">elderly</span>
                         <h4 class="text-[14px] font-semibold text-on-surface">Chăm sóc người cao tuổi</h4>
@@ -188,12 +188,12 @@
 </section>
 
 <!-- NỀN TẢNG AI (Gnixy) -->
-<section id="gnixy" class="py-xl animate-bg-flow text-on-surface overflow-hidden relative reveal-hidden">
+<section id="gnixy" class="py-12 md:py-xl animate-bg-flow text-on-surface overflow-hidden relative reveal-hidden">
     <div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/30 via-transparent to-transparent"></div>
-    <div class="px-margin-desktop max-w-[80rem] mx-auto relative z-10">
+    <div class="px-5 md:px-margin-desktop max-w-[80rem] mx-auto relative z-10">
         <div class="flex flex-col items-center text-center space-y-md mb-lg stagger-item reveal-hidden" style="--stagger-idx: 1">
             <img alt="Gnixy Logo" class="h-16 w-auto interactive-element hover:scale-110" src="/images/gnixy_logo.png">
-            <h2 class="text-[32px] font-semibold text-on-surface tracking-tight">NỀN TẢNG AI - Powered by Gnixy AI</h2>
+            <h2 class="text-[24px] md:text-[32px] font-semibold text-on-surface tracking-tight">NỀN TẢNG AI - Powered by Gnixy AI</h2>
             <p class="text-[18px] text-on-surface-variant max-w-[36rem] mx-auto">Một nền tảng. Hàng nghìn Trợ lý AI. <br>Khai phá tiềm năng vô hạn của trí tuệ nhân tạo trong y tế.</p>
         </div>
         <div class="max-w-[56rem] mx-auto stagger-item reveal-hidden" style="--stagger-idx: 2">
@@ -208,15 +208,15 @@
 </section>
 
 <!-- TRẢI NGHIỆM NGƯỜI BỆNH (Hearme) -->
-<section id="hearme" class="py-xl bg-surface overflow-hidden reveal-hidden">
-    <div class="px-margin-desktop max-w-[80rem] mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+<section id="hearme" class="py-12 md:py-xl bg-surface overflow-hidden reveal-hidden">
+    <div class="px-5 md:px-margin-desktop max-w-[80rem] mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-xl items-center">
             <div class="space-y-lg stagger-item reveal-hidden" style="--stagger-idx: 1">
                 <div class="inline-block px-sm py-xs bg-tertiary/10 text-tertiary rounded-lg text-[12px] font-semibold tracking-wider mb-4">ĐO TRẢI NGHIỆM NGƯỜI BỆNH</div>
                 <img src="/images/hearme.png" alt="Hearme Logo" class="h-12 w-auto mb-2 interactive-element hover:scale-110">
-                <h2 class="text-[32px] font-semibold text-on-surface tracking-tight">Powered by Hearme</h2>
+                <h2 class="text-[24px] md:text-[32px] font-semibold text-on-surface tracking-tight">Powered by Hearme</h2>
                 <p class="text-[18px] text-on-surface-variant">Lắng nghe người bệnh. Đo lường trải nghiệm. <br>Cải thiện chất lượng dịch vụ y tế dựa trên dữ liệu cảm xúc thực.</p>
-                <div class="grid grid-cols-2 gap-md">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
                     <div class="p-md rounded-xl border border-outline-variant flex items-center gap-sm hover:border-tertiary/50 transition-colors interactive-element">
                         <span class="material-symbols-outlined text-tertiary">check_circle</span>
                         <span class="text-[14px] font-semibold text-on-surface">Phản hồi người bệnh</span>
@@ -249,10 +249,10 @@
 </section>
 
 <!-- HỆ SINH THÁI -->
-<section id="ecosystem" class="bg-white py-xl reveal-hidden">
-    <div class="px-margin-desktop max-w-[80rem] mx-auto text-center">
+<section id="ecosystem" class="bg-white py-12 md:py-xl reveal-hidden">
+    <div class="px-5 md:px-margin-desktop max-w-[80rem] mx-auto text-center">
         <div class="mx-auto space-y-sm stagger-item reveal-hidden" style="--stagger-idx: 1;">
-            <h2 class="text-[32px] font-semibold text-on-surface tracking-tight">Chúng tôi không xây một sản phẩm.<br><span class="text-primary">Chúng tôi đang xây dựng một hệ sinh thái.</span></h2>
+            <h2 class="text-[24px] md:text-[32px] font-semibold text-on-surface tracking-tight">Chúng tôi không xây một sản phẩm.<br><span class="text-primary">Chúng tôi đang xây dựng một hệ sinh thái.</span></h2>
         </div>
         <div class="relative mt-lg stagger-item reveal-hidden" style="--stagger-idx: 2;">
             <!-- Using the newly copied healthcare_eco.png -->
@@ -262,62 +262,62 @@
 </section>
 
 <!-- THAM GIA LIÊN MINH -->
-<section id="join" class="py-xl bg-surface-container-low reveal-hidden">
-    <div class="px-margin-desktop max-w-[80rem] mx-auto">
+<section id="join" class="py-12 md:py-xl bg-surface-container-low reveal-hidden">
+    <div class="px-5 md:px-margin-desktop max-w-[80rem] mx-auto">
         <div class="text-center mb-lg stagger-item reveal-hidden" style="--stagger-idx: 1">
-            <h2 class="text-[32px] font-semibold text-on-surface tracking-tight">THAM GIA LIÊN MINH KIẾN TẠO</h2>
+            <h2 class="text-[24px] md:text-[32px] font-semibold text-on-surface tracking-tight">THAM GIA LIÊN MINH KIẾN TẠO</h2>
             <p class="text-[18px] text-on-surface-variant max-w-[42rem] mx-auto mt-2">Chúng tôi đang xây dựng cộng đồng của những bác sĩ, chuyên gia và những người yêu công nghệ cùng nhau thay đổi tương lai y tế Việt Nam.</p>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-md stagger-item reveal-hidden" style="--stagger-idx: 2">
-            <div onclick="openModal()" class="cursor-pointer bg-white p-lg rounded-2xl text-center shadow-sm hover-lift interactive-element group">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-md stagger-item reveal-hidden" style="--stagger-idx: 2">
+            <div onclick="openModal()" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
                 <span class="material-symbols-outlined text-4xl text-primary mb-md group-hover:scale-110 transition-transform inline-block">medical_services</span>
-                <h3 class="text-[14px] font-semibold text-on-surface">Bác sĩ</h3>
+                <h3 class="text-[13px] md:text-[14px] font-semibold text-on-surface">Bác sĩ</h3>
             </div>
-            <div onclick="openModal()" class="cursor-pointer bg-white p-lg rounded-2xl text-center shadow-sm hover-lift interactive-element group">
+            <div onclick="openModal()" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
                 <span class="material-symbols-outlined text-4xl text-primary mb-md group-hover:scale-110 transition-transform inline-block">neurology</span>
-                <h3 class="text-[14px] font-semibold text-on-surface">Chuyên gia AI</h3>
+                <h3 class="text-[13px] md:text-[14px] font-semibold text-on-surface">Chuyên gia AI</h3>
             </div>
-            <div onclick="openModal()" class="cursor-pointer bg-white p-lg rounded-2xl text-center shadow-sm hover-lift interactive-element group">
+            <div onclick="openModal()" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
                 <span class="material-symbols-outlined text-4xl text-primary mb-md group-hover:scale-110 transition-transform inline-block">precision_manufacturing</span>
-                <h3 class="text-[14px] font-semibold text-on-surface">Chuyên gia Robotics</h3>
+                <h3 class="text-[13px] md:text-[14px] font-semibold text-on-surface">Chuyên gia Robotics</h3>
             </div>
-            <div onclick="openModal()" class="cursor-pointer bg-white p-lg rounded-2xl text-center shadow-sm hover-lift interactive-element group">
+            <div onclick="openModal()" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
                 <span class="material-symbols-outlined text-4xl text-primary mb-md group-hover:scale-110 transition-transform inline-block">person_add</span>
-                <h3 class="text-[14px] font-semibold text-on-surface">Co-Founder</h3>
+                <h3 class="text-[13px] md:text-[14px] font-semibold text-on-surface">Co-Founder</h3>
             </div>
-            <div onclick="openModal()" class="cursor-pointer bg-white p-lg rounded-2xl text-center shadow-sm hover-lift interactive-element group">
+            <div onclick="openModal()" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
                 <span class="material-symbols-outlined text-4xl text-primary mb-md group-hover:scale-110 transition-transform inline-block">rocket_launch</span>
-                <h3 class="text-[14px] font-semibold text-on-surface">Startup Builder</h3>
+                <h3 class="text-[13px] md:text-[14px] font-semibold text-on-surface">Startup Builder</h3>
             </div>
-            <div onclick="openModal()" class="cursor-pointer bg-white p-lg rounded-2xl text-center shadow-sm hover-lift interactive-element group">
+            <div onclick="openModal()" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
                 <span class="material-symbols-outlined text-4xl text-primary mb-md group-hover:scale-110 transition-transform inline-block">domain</span>
-                <h3 class="text-[14px] font-semibold text-on-surface">Bệnh viện</h3>
+                <h3 class="text-[13px] md:text-[14px] font-semibold text-on-surface">Bệnh viện</h3>
             </div>
-            <div onclick="openModal()" class="cursor-pointer bg-white p-lg rounded-2xl text-center shadow-sm hover-lift interactive-element group">
+            <div onclick="openModal()" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
                 <span class="material-symbols-outlined text-4xl text-primary mb-md group-hover:scale-110 transition-transform inline-block">school</span>
-                <h3 class="text-[14px] font-semibold text-on-surface">Trường Đại học</h3>
+                <h3 class="text-[13px] md:text-[14px] font-semibold text-on-surface">Trường Đại học</h3>
             </div>
-            <div onclick="openModal()" class="cursor-pointer bg-white p-lg rounded-2xl text-center shadow-sm hover-lift interactive-element group">
+            <div onclick="openModal()" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
                 <span class="material-symbols-outlined text-4xl text-primary mb-md group-hover:scale-110 transition-transform inline-block">payments</span>
-                <h3 class="text-[14px] font-semibold text-on-surface">Nhà đầu tư</h3>
+                <h3 class="text-[13px] md:text-[14px] font-semibold text-on-surface">Nhà đầu tư</h3>
             </div>
         </div>
     </div>
 </section>
 
 <!-- TẦM NHÌN -->
-<section id="tam-nhin" class="py-xl bg-white overflow-hidden reveal-hidden">
-    <div class="px-margin-desktop max-w-[56rem] mx-auto text-center space-y-md">
-        <h2 class="text-[64px] md:text-[96px] font-bold select-none pointer-events-none pb-md text-primary opacity-40 uppercase tracking-wider">TẦM NHÌN 2030</h2>
-        <p class="text-[32px] font-semibold leading-relaxed text-on-surface stagger-item reveal-hidden relative z-10" style="--stagger-idx: 1;">
+<section id="tam-nhin" class="py-12 md:py-xl bg-white overflow-hidden reveal-hidden">
+    <div class="px-5 md:px-margin-desktop max-w-[56rem] mx-auto text-center space-y-md">
+        <h2 class="text-[40px] md:text-[64px] md:text-[96px] font-bold select-none pointer-events-none pb-md text-primary opacity-40 uppercase tracking-wider">TẦM NHÌN 2030</h2>
+        <p class="text-[24px] md:text-[32px] font-semibold leading-relaxed text-on-surface stagger-item reveal-hidden relative z-10" style="--stagger-idx: 1;">
             "Mỗi gia đình Việt Nam xứng đáng có <span class="text-primary font-bold">Một Bác sĩ AI riêng</span> – luôn lắng nghe, thấu hiểu và bảo vệ sức khỏe suốt đời."
         </p>
     </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg-surface-container-low w-full py-xl border-t border-outline-variant/30 reveal-hidden">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-[80rem] mx-auto items-start">
+<footer class="bg-surface-container-low w-full py-12 md:py-xl border-t border-outline-variant/30 reveal-hidden">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-5 md:px-margin-desktop max-w-[80rem] mx-auto items-start">
         <div class="space-y-md col-span-1 md:col-span-2">
             <img alt="Doctor Genie Logo" class="h-10 w-auto interactive-element hover:opacity-80" src="/images/genie_logo.png">
             <p class="text-[16px] text-on-surface-variant max-w-[28rem]">
@@ -339,7 +339,7 @@
             </ul>
         </div>
     </div>
-    <div class="px-margin-desktop max-w-[80rem] mx-auto pt-lg mt-lg border-t border-outline-variant/10 flex flex-col md:flex-row justify-center gap-md text-on-surface-variant opacity-60 text-[12px] font-semibold tracking-wider">
+    <div class="px-5 md:px-margin-desktop max-w-[80rem] mx-auto pt-lg mt-lg border-t border-outline-variant/10 flex flex-col md:flex-row justify-center gap-md text-on-surface-variant opacity-60 text-[12px] font-semibold tracking-wider">
         <p>© 2026 Doctor Genie. Clinical excellence, powered by human expertise and AI.</p>
     </div>
 </footer>
@@ -354,7 +354,7 @@
       </button>
     </div>
     <div id="form-success" class="hidden text-center py-8">
-      <span class="material-symbols-outlined text-[64px] text-secondary mb-4">check_circle</span>
+      <span class="material-symbols-outlined text-[40px] md:text-[64px] text-secondary mb-4">check_circle</span>
       <p class="text-[18px] text-on-surface font-semibold mb-2">Cảm ơn bạn đã đăng ký!</p>
       <p class="text-[16px] text-on-surface-variant">Chúng tôi sẽ liên hệ trong thời gian sớm nhất.</p>
     </div>
