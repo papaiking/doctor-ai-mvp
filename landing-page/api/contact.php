@@ -67,7 +67,11 @@ try {
     $mail->Subject = "[Doctor Genie] Cảm ơn bạn đã đăng ký: $roleLabel";
     
     // Embed the logo
-    $logoPath = __DIR__ . '/../public/images/genie_logo.png';
+    $logoPath = __DIR__ . '/../images/genie_logo.png';
+    if (!file_exists($logoPath)) {
+        $logoPath = __DIR__ . '/../public/images/genie_logo.png'; // Fallback for local development
+    }
+    
     if (file_exists($logoPath)) {
         $mail->addEmbeddedImage($logoPath, 'genie_logo');
         $logoHtml = "<img src='cid:genie_logo' alt='Doctor Genie' style='height:40px; margin-bottom:15px;'>";

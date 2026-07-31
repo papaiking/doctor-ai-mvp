@@ -38,3 +38,21 @@ help me to put logo: genie_logo.png into email header
 # /gsd-fast: Update document
 1. Make README.md for this module, about project, configuration, how to run dev, deployment into nginx with php
 2. Update README.md in root repo
+
+
+# /gsd-fast Send email
+
+I want API to use email configuration like this:
+    "gnixy": {
+        "host": "smtp.gmail.com",
+        "port": 465,
+        "encryption": "SSL",
+        "name": "Gnixy",
+        "login": "contact@hearme.vn",
+        "password": "eoljeldzobeeicry",
+    }
+
+and sending mail must use SSL protocol
+
+# /gsd-fast deployment
+

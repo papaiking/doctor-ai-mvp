@@ -5,6 +5,24 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Doctor Genie | AI Healthcare Ecosystem</title>
     <meta name="description" content="Kiến tạo tương lai chăm sóc sức khỏe cùng AI. Mỗi gia đình có một Bác sĩ AI. Mỗi bác sĩ có một Trợ lý AI.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/icon.png">
+    <link rel="apple-touch-icon" href="/images/icon.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://doctor.gnixy.com/">
+    <meta property="og:title" content="Doctor Genie | AI Healthcare Ecosystem">
+    <meta property="og:description" content="Kiến tạo tương lai chăm sóc sức khỏe cùng AI. Mỗi gia đình có một Bác sĩ AI. Mỗi bác sĩ có một Trợ lý AI.">
+    <meta property="og:image" content="https://doctor.gnixy.com/images/hero.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://doctor.gnixy.com/">
+    <meta property="twitter:title" content="Doctor Genie | AI Healthcare Ecosystem">
+    <meta property="twitter:description" content="Kiến tạo tương lai chăm sóc sức khỏe cùng AI. Mỗi gia đình có một Bác sĩ AI. Mỗi bác sĩ có một Trợ lý AI.">
+    <meta property="twitter:image" content="https://doctor.gnixy.com/images/hero.png">
     <link rel="stylesheet" href="/src/style.css">
 </head>
 <body class="bg-surface text-on-surface selection:bg-primary/10">
@@ -45,7 +63,7 @@
                 Chúng tôi đang xây dựng hệ sinh thái AI chăm sóc sức khỏe thế hệ mới tại Việt Nam. Kết nối công nghệ với trái tim để bảo vệ sức khỏe mọi nhà.
             </p>
             <div class="flex flex-wrap gap-md pt-base">
-                <button onclick="openModal()" class="cursor-pointer bg-primary text-white px-lg py-md rounded-full text-[14px] font-semibold hover:shadow-xl transition-all hover:-translate-y-1 btn-pulse">🚀 Trở thành Đồng sáng lập</button>
+                <button onclick="openModal()" class="cursor-pointer bg-primary text-white px-lg py-md rounded-full text-[14px] font-semibold hover:shadow-xl transition-all hover:-translate-y-1 btn-pulse">🚀 Đồng hành sáng lập</button>
                 <button onclick="openModal()" class="cursor-pointer bg-white text-on-surface px-lg py-md rounded-full text-[14px] font-semibold shadow-sm hover:bg-surface-container-lowest transition-all interactive-element">🤝 Trở thành Đối tác</button>
                 <button onclick="openModal()" class="text-primary text-[14px] font-semibold flex items-center gap-xs hover:gap-sm transition-all group interactive-element cursor-pointer">
                     💰 Đồng hành đầu tư
@@ -238,7 +256,7 @@
         </div>
         <div class="relative mt-lg stagger-item reveal-hidden" style="--stagger-idx: 2;">
             <!-- Using the newly copied healthcare_eco.png -->
-            <img alt="Doctor Genie AI Ecosystem Infographic" class="w-full h-auto object-cover animate-float" src="/images/healthcare_eco.png">
+            <img alt="Doctor Genie AI Ecosystem Infographic" class="w-full h-auto object-cover animate-float opacity-50 saturate-75 mix-blend-multiply transition-all duration-500 hover:opacity-100 hover:saturate-100" src="/images/healthcare_eco.png">
         </div>
     </div>
 </section>
@@ -290,7 +308,7 @@
 <!-- TẦM NHÌN -->
 <section id="tam-nhin" class="py-xl bg-white overflow-hidden reveal-hidden">
     <div class="px-margin-desktop max-w-[56rem] mx-auto text-center space-y-md">
-        <h2 class="text-[64px] md:text-[96px] font-bold select-none pointer-events-none pb-md text-primary opacity-20 uppercase tracking-wider">TẦM NHÌN 2030</h2>
+        <h2 class="text-[64px] md:text-[96px] font-bold select-none pointer-events-none pb-md text-primary opacity-40 uppercase tracking-wider">TẦM NHÌN 2030</h2>
         <p class="text-[32px] font-semibold leading-relaxed text-on-surface stagger-item reveal-hidden relative z-10" style="--stagger-idx: 1;">
             "Mỗi gia đình Việt Nam xứng đáng có <span class="text-primary font-bold">Một Bác sĩ AI riêng</span> – luôn lắng nghe, thấu hiểu và bảo vệ sức khỏe suốt đời."
         </p>
@@ -337,14 +355,14 @@
     </div>
     <div id="form-success" class="hidden text-center py-8">
       <span class="material-symbols-outlined text-[64px] text-secondary mb-4">check_circle</span>
-      <p class="text-[18px] text-on-surface font-semibold mb-2">Cảm ơn bạn!</p>
+      <p class="text-[18px] text-on-surface font-semibold mb-2">Cảm ơn bạn đã đăng ký!</p>
       <p class="text-[16px] text-on-surface-variant">Chúng tôi sẽ liên hệ trong thời gian sớm nhất.</p>
     </div>
     <form id="cta-form" action="/api/contact.php" method="POST" onsubmit="return handleFormSubmit(event)">
-      <div class="space-y-4">
+      <div class="space-y-3">
         <div>
-          <label class="block text-on-surface-variant text-[14px] font-semibold mb-2">Bạn quan tâm đến</label>
-          <select name="role" required class="w-full border border-outline-variant/50 rounded-xl px-4 py-3 text-on-surface bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-[14px]">
+          <label class="block text-on-surface-variant text-[13px] font-semibold mb-1">Bạn quan tâm đến</label>
+          <select name="role" required class="w-full border border-outline-variant/50 rounded-xl px-3 py-2.5 text-on-surface bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-[14px]">
             <option value="">Chọn vai trò...</option>
             <option value="co-founder">Đồng sáng lập</option>
             <option value="partner">Đối tác</option>
@@ -353,24 +371,24 @@
           </select>
         </div>
         <div>
-          <label class="block text-on-surface-variant text-[14px] font-semibold mb-2">Họ và tên</label>
-          <input type="text" name="name" required placeholder="Nguyễn Văn A" class="w-full border border-outline-variant/50 rounded-xl px-4 py-3 text-on-surface bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-[14px]">
+          <label class="block text-on-surface-variant text-[13px] font-semibold mb-1">Họ và tên</label>
+          <input type="text" name="name" required placeholder="Nguyễn Văn A" class="w-full border border-outline-variant/50 rounded-xl px-3 py-2.5 text-on-surface bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-[14px]">
         </div>
         <div>
-          <label class="block text-on-surface-variant text-[14px] font-semibold mb-2">Email</label>
-          <input type="email" name="email" required placeholder="email@example.com" class="w-full border border-outline-variant/50 rounded-xl px-4 py-3 text-on-surface bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-[14px]">
+          <label class="block text-on-surface-variant text-[13px] font-semibold mb-1">Email</label>
+          <input type="email" name="email" required placeholder="email@example.com" class="w-full border border-outline-variant/50 rounded-xl px-3 py-2.5 text-on-surface bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-[14px]">
         </div>
         <div>
-          <label class="block text-on-surface-variant text-[14px] font-semibold mb-2">Số điện thoại</label>
-          <input type="tel" name="phone" placeholder="+84 000 000 000" class="w-full border border-outline-variant/50 rounded-xl px-4 py-3 text-on-surface bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-[14px]">
+          <label class="block text-on-surface-variant text-[13px] font-semibold mb-1">Số điện thoại</label>
+          <input type="tel" name="phone" placeholder="+84 000 000 000" class="w-full border border-outline-variant/50 rounded-xl px-3 py-2.5 text-on-surface bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-[14px]">
         </div>
         <div>
-          <label class="block text-on-surface-variant text-[14px] font-semibold mb-2">Lời nhắn</label>
-          <textarea name="message" rows="3" placeholder="Chia sẻ thêm về bạn..." class="w-full border border-outline-variant/50 rounded-xl px-4 py-3 text-on-surface bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-[14px] resize-none"></textarea>
+          <label class="block text-on-surface-variant text-[13px] font-semibold mb-1">Lời nhắn</label>
+          <textarea name="message" rows="2" placeholder="Chia sẻ thêm về bạn..." class="w-full border border-outline-variant/50 rounded-xl px-3 py-2.5 text-on-surface bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-[14px] resize-none"></textarea>
         </div>
       </div>
-      <div id="form-error" class="hidden mt-4 p-3 bg-error-container text-on-error-container text-[14px] rounded-xl">Gửi thất bại. Vui lòng thử lại hoặc liên hệ trực tiếp qua thuc@gnixy.com.</div>
-      <button type="submit" id="form-submit" class="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-4 rounded-xl text-[16px] transition-all mt-6">
+      <div id="form-error" class="hidden mt-3 p-3 bg-error-container text-on-error-container text-[13px] rounded-xl">Gửi thất bại. Vui lòng thử lại hoặc liên hệ trực tiếp qua contact@gnixy.com.</div>
+      <button type="submit" id="form-submit" class="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 rounded-xl text-[15px] transition-all mt-5">
         Gửi đăng ký
       </button>
     </form>
