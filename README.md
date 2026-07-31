@@ -4,9 +4,14 @@ Gnixy Doctor AI is a comprehensive, voice-first healthcare assistant ecosystem d
 
 ## 🌟 Ecosystem Components
 
-This repository contains three primary modules:
+This repository contains four primary modules:
 
-### 1. Doctor Robot (`/doctor-robot`)
+### 1. Landing Page (`/landing-page`)
+- **What it is:** The standalone marketing website for the Doctor Genie AI Healthcare Ecosystem.
+- **Tech Stack:** Vanilla HTML/CSS/JS, Vite, Tailwind CSS v4, PHP.
+- **Purpose:** Communicates the ecosystem vision, showcases AI capabilities through embedded demos, and drives partner/investor conversions via a PHP-powered contact form.
+
+### 2. Doctor Robot (`/doctor-robot`)
 - **What it is:** A home device interface (tablet/smart display kiosk) for the patient.
 - **Tech Stack:** React, Vite
 - **Purpose:** Allows patients to interact with the AI assistant via natural voice, track their daily health schedule, and alert emergency contacts. Features a simplified landscape UI with a dynamic voice visualizer.
@@ -41,8 +46,16 @@ pip install -r requirements.txt
 python main.py
 ```
 
-### Frontend (Doctor Robot & Mobile)
+### Frontend (Landing Page, Robot & Mobile)
 Both frontend apps use standard Vite development commands. Run them in separate terminals:
+
+**For the Landing Page:**
+```bash
+cd landing-page
+npm install
+npm run dev
+# Note: The contact form requires a PHP backend to function fully.
+```
 
 **For the Robot (Tablet UI):**
 ```bash

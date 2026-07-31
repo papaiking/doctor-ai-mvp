@@ -34,3 +34,7 @@ help me to put logo: genie_logo.png into email header
 # /gsd-fast: Adjust
 1. Make links for phone and email contacts in the footer
 2. Make hearme's hove animation as same as in Gnixy logo
+
+# /gsd-fast: Update document
+1. Make README.md for this module, about project, configuration, how to run dev, deployment into nginx with php
+2. Update README.md in root repo
