@@ -23,8 +23,8 @@
     <meta property="twitter:title" content="Doctor Genie | AI Healthcare Ecosystem">
     <meta property="twitter:description" content="Kiến tạo tương lai chăm sóc sức khỏe cùng AI. Mỗi gia đình có một Bác sĩ AI. Mỗi bác sĩ có một Trợ lý AI.">
     <meta property="twitter:image" content="https://doctor.gnixy.com/images/hero.png">
-  <script type="module" crossorigin src="/assets/index-CTdrlpK8.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-Bwg_D1ZR.css">
+  <script type="module" crossorigin src="/assets/index-DBgHbAsk.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CGe_69kc.css">
 </head>
 <body class="bg-surface text-on-surface selection:bg-primary/10">
 
@@ -35,12 +35,44 @@
             <img alt="Doctor Genie Logo" class="h-10 w-auto" src="/images/genie_logo.png">
         </div>
         <div class="hidden lg:flex items-center gap-4 md:gap-lg">
-            <a class="nav-link text-[16px] leading-[24px] text-on-surface-variant hover:text-primary transition-all duration-300" href="#ai-doctor">Bác sĩ AI</a>
-            <a class="nav-link text-[16px] leading-[24px] text-on-surface-variant hover:text-primary transition-all duration-300" href="#my-doctor">My Doctor</a>
-            <a class="nav-link text-[16px] leading-[24px] text-on-surface-variant hover:text-primary transition-all duration-300" href="#gnixy">Gnixy AI</a>
-            <a class="nav-link text-[16px] leading-[24px] text-on-surface-variant hover:text-primary transition-all duration-300" href="#hearme">Hearme</a>
+            <a class="nav-link text-[16px] leading-[24px] text-on-surface-variant hover:text-primary transition-all duration-300" href="#tam-nhin">Tầm nhìn</a>
+            <div class="relative group interactive-element">
+                <a class="nav-link text-[16px] leading-[24px] text-on-surface-variant hover:text-primary transition-all duration-300 flex items-center gap-1 cursor-pointer" href="#ai-doctor">
+                    Giải pháp
+                    <span class="material-symbols-outlined text-[20px]">expand_more</span>
+                </a>
+                <div class="absolute left-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 py-2 flex flex-col z-50">
+                    <a class="px-4 py-2 text-[15px] text-on-surface hover:text-primary hover:bg-surface-container-low transition-colors" href="#ai-doctor">AI Doctor</a>
+                    <a class="px-4 py-2 text-[15px] text-on-surface hover:text-primary hover:bg-surface-container-low transition-colors" href="#my-doctor">My Doctor</a>
+                    <a class="px-4 py-2 text-[15px] text-on-surface hover:text-primary hover:bg-surface-container-low transition-colors" href="#gnixy">Gnixy AI</a>
+                    <a class="px-4 py-2 text-[15px] text-on-surface hover:text-primary hover:bg-surface-container-low transition-colors" href="#hearme">Hearme</a>
+                </div>
+            </div>
             <a class="nav-link text-[16px] leading-[24px] text-on-surface-variant hover:text-primary transition-all duration-300" href="#ecosystem">Hệ sinh thái</a>
-            <a class="nav-link text-[16px] leading-[24px] text-on-surface-variant hover:text-primary transition-all duration-300" href="#join">Liên hệ</a>
+            <a class="nav-link text-[16px] leading-[24px] text-on-surface-variant hover:text-primary transition-all duration-300" href="#join">Cùng kiến tạo</a>
+            <a class="nav-link text-[16px] leading-[24px] text-on-surface-variant hover:text-primary transition-all duration-300" href="#footer">Liên hệ</a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="lg:hidden text-on-surface hover:text-primary transition-colors flex items-center justify-center">
+            <span class="material-symbols-outlined text-[28px]">menu</span>
+        </button>
+    </div>
+    <!-- Mobile Menu Panel -->
+    <div id="mobile-menu" class="lg:hidden fixed top-20 left-0 w-full bg-white shadow-lg border-t border-outline-variant/20 transition-all duration-300 max-h-0 overflow-hidden opacity-0">
+        <div class="flex flex-col py-4 px-5 space-y-4">
+            <a class="mobile-nav-link text-[16px] font-semibold text-on-surface-variant hover:text-primary" href="#tam-nhin">Tầm nhìn</a>
+            <div class="space-y-2">
+                <p class="text-[16px] font-semibold text-on-surface-variant">Giải pháp</p>
+                <div class="flex flex-col pl-4 space-y-3 border-l-2 border-outline-variant/20 mt-2">
+                    <a class="mobile-nav-link text-[15px] text-on-surface hover:text-primary" href="#ai-doctor">AI Doctor</a>
+                    <a class="mobile-nav-link text-[15px] text-on-surface hover:text-primary" href="#my-doctor">My Doctor</a>
+                    <a class="mobile-nav-link text-[15px] text-on-surface hover:text-primary" href="#gnixy">Gnixy AI</a>
+                    <a class="mobile-nav-link text-[15px] text-on-surface hover:text-primary" href="#hearme">Hearme</a>
+                </div>
+            </div>
+            <a class="mobile-nav-link text-[16px] font-semibold text-on-surface-variant hover:text-primary" href="#ecosystem">Hệ sinh thái</a>
+            <a class="mobile-nav-link text-[16px] font-semibold text-on-surface-variant hover:text-primary" href="#join">Cùng kiến tạo</a>
+            <a class="mobile-nav-link text-[16px] font-semibold text-on-surface-variant hover:text-primary" href="#footer">Liên hệ</a>
         </div>
     </div>
 </nav>
@@ -65,9 +97,9 @@
             </p>
             <div class="flex flex-col sm:flex-row flex-wrap gap-4 pt-base">
                 <button onclick="openModal('co-founder')" class="cursor-pointer bg-primary text-white px-6 md:px-lg py-md rounded-full text-[14px] font-semibold hover:shadow-xl transition-all hover:-translate-y-1 btn-pulse">🚀 Đồng hành sáng lập</button>
-                <button onclick="openModal('partner')" class="cursor-pointer bg-white text-on-surface px-6 md:px-lg py-md rounded-full text-[14px] font-semibold shadow-sm hover:bg-surface-container-lowest transition-all interactive-element">🤝 Trở thành Đối tác</button>
+                <button onclick="openModal('partner')" class="cursor-pointer bg-white text-on-surface px-6 md:px-lg py-md rounded-full text-[14px] font-semibold shadow-sm hover:bg-surface-container-lowest transition-all interactive-element">🤝 Hợp tác Phát triển</button>
                 <button onclick="openModal('investor')" class="text-primary text-[14px] font-semibold flex items-center gap-xs hover:gap-sm transition-all group interactive-element cursor-pointer">
-                    💰 Đồng hành đầu tư
+                    💰 Cơ hội Đầu tư
                     <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
                 </button>
             </div>
@@ -79,7 +111,7 @@
 <section id="ai-doctor" class="py-12 md:py-xl bg-white reveal-hidden">
     <div class="px-5 md:px-margin-desktop max-w-[80rem] mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-xl items-center">
-            <div class="space-y-lg order-2 lg:order-1">
+            <div class="space-y-lg order-1">
                 <div class="space-y-sm">
                     <h2 class="text-[24px] md:text-[32px] font-semibold text-on-surface tracking-tight">Bác sĩ AI luôn đồng hành cùng bạn</h2>
                     <div class="h-1 w-20 bg-primary rounded-full"></div>
@@ -123,9 +155,9 @@
                     </div>
                 </div>
             </div>
-            <div class="order-1 lg:order-2 space-y-lg">
+            <div class="order-2 space-y-lg">
                 <div class="relative group animate-float">
-                    <img alt="AI Doctor Interface" class="w-full rounded-2xl shadow-2xl transition-transform group-hover:scale-[1.03] duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLvhKsFPJkcWtR2YMWhKH95vkJSjyMOuyg3ilftkxbOjzjLqqWADSXWNmOg0kc9LlM3WWTW8ZFLXhq32zGeyXy5VgECB_7K8Pf1LdB8OFvqh1yOEPHViLUFBNzmzev5pd_qrUMZmpYRXPhfydR2d4O3OXBsJFteuaL7sysLeOHucSrVdBL7m6JDgdovPHKDhZ76M90wgbfBEQAg1x5Wa8Az9-GxZSBy6jTUO199kTb6zdHcDdNShFXvJ7YY">
+                    <img alt="AI Doctor Interface" class="w-full rounded-2xl shadow-2xl transition-transform group-hover:scale-[1.03] duration-700" src="/images/ai-doctor.png">
                     <div class="absolute inset-0 rounded-2xl bg-primary/5 pointer-events-none group-hover:bg-transparent transition-all"></div>
                 </div>
                 <div class="youtube-placeholder video-container group border border-outline-variant/50 shadow-lg" data-video="BYAhPli6VHw">
@@ -160,7 +192,7 @@
                         <span class="material-symbols-outlined text-4xl">smart_toy</span>
                     </div>
                     <div>
-                        <h3 class="text-[24px] font-semibold mb-xs">Bác sĩ AI</h3>
+                        <h3 class="text-[24px] font-semibold mb-xs">My Doctor</h3>
                         <p class="text-[16px] text-on-surface-variant">Người bạn thông minh hiểu rõ sức khỏe của bạn nhất.</p>
                     </div>
                 </div>
@@ -265,9 +297,24 @@
 <!-- THAM GIA LIÊN MINH -->
 <section id="join" class="py-12 md:py-xl bg-surface-container-low reveal-hidden">
     <div class="px-5 md:px-margin-desktop max-w-[80rem] mx-auto">
-        <div class="text-center mb-lg stagger-item reveal-hidden" style="--stagger-idx: 1">
-            <h2 class="text-[24px] md:text-[32px] font-semibold text-on-surface tracking-tight">THAM GIA LIÊN MINH KIẾN TẠO</h2>
-            <p class="text-[18px] text-on-surface-variant max-w-[42rem] mx-auto mt-2">Chúng tôi đang xây dựng cộng đồng của những bác sĩ, chuyên gia và những người yêu công nghệ cùng nhau thay đổi tương lai y tế Việt Nam.</p>
+        <div class="text-center mb-12 md:mb-16 stagger-item reveal-hidden" style="--stagger-idx: 1">
+            <h2 class="text-[28px] md:text-[40px] font-bold text-on-surface tracking-tight mb-6">
+                KIẾN TẠO HỆ THỐNG <br class="hidden sm:block"><span class="text-gradient">CHĂM SÓC SỨC KHỎE TƯƠNG LAI</span>
+            </h2>
+            <div class="max-w-[48rem] mx-auto space-y-5 text-[16px] md:text-[18px] text-on-surface-variant leading-relaxed">
+                <p>
+                    <strong class="text-primary font-semibold">Doctor Genie</strong> là nơi hội tụ của chuyên gia, AI, Robot, dữ liệu, phục vụ chăm sóc sức khỏe con người tốt hơn.
+                </p>
+                <div class="inline-block relative">
+                    <div class="absolute inset-0 bg-primary/5 rounded-xl transform rotate-1"></div>
+                    <p class="relative bg-white text-on-surface font-semibold text-[18px] md:text-[22px] py-4 px-6 md:px-8 border-l-4 border-primary rounded-xl shadow-sm italic my-2">
+                        "Tương lai thuộc về những người bắt tay xây dựng nó từ hôm nay"
+                    </p>
+                </div>
+                <p>
+                    Chúng tôi đang xây dựng <strong class="text-on-surface font-semibold">cộng đồng</strong> của những bác sĩ, chuyên gia, đối tác, nhà đầu tư và những người yêu công nghệ cùng nhau thay đổi tương lai y tế Việt Nam.
+                </p>
+            </div>
         </div>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-md stagger-item reveal-hidden" style="--stagger-idx: 2">
             <div onclick="openModal('partner')" class="cursor-pointer bg-white p-4 md:p-6 rounded-2xl text-center shadow-sm hover-lift interactive-element group">
@@ -317,17 +364,41 @@
 </section>
 
 <!-- Footer -->
-<footer class="bg-surface-container-low w-full py-12 md:py-xl border-t border-outline-variant/30 reveal-hidden">
+<footer id="footer" class="bg-surface-container-low w-full py-12 md:py-xl border-t border-outline-variant/30 reveal-hidden">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-5 md:px-margin-desktop max-w-[80rem] mx-auto items-start">
-        <div class="space-y-md col-span-1 md:col-span-2">
-            <img alt="Doctor Genie Logo" class="h-10 w-auto interactive-element hover:opacity-80" src="/images/genie_logo.png">
-            <p class="text-[16px] text-on-surface-variant max-w-[28rem]">
-                Doctor Genie là đơn vị tiên phong trong việc kiến tạo hệ sinh thái y tế thông minh, kết hợp giữa AI và trải nghiệm người dùng tối ưu.
+        <div class="space-y-6 col-span-1 md:col-span-2 lg:pr-12">
+            <img alt="Doctor Genie Logo" class="h-12 w-auto interactive-element hover:opacity-80" src="/images/genie_logo.png">
+            <p class="text-[16px] text-on-surface-variant leading-relaxed max-w-[32rem]">
+                Doctor Genie là đơn vị tiên phong trong việc kiến tạo hệ sinh thái y tế thông minh, kết hợp giữa AI và trải nghiệm người dùng tối ưu. Chúng tôi hướng tới sứ mệnh bảo vệ sức khỏe cho mọi gia đình Việt.
             </p>
-            <div class="space-y-xs text-[16px] text-on-surface-variant">
-                <p class="flex items-center gap-xs interactive-element hover:text-primary"><span class="material-symbols-outlined text-primary text-[18px]">location_on</span> SAVINA Building, Số 1 Đinh Lễ, Hoàn Kiếm, Hà Nội</p>
-                <a href="tel:+84912083463" class="flex items-center gap-xs interactive-element hover:text-primary"><span class="material-symbols-outlined text-primary text-[18px]">call</span> +84 912 083 463</a>
-                <a href="mailto:contact@gnixy.com" class="flex items-center gap-xs interactive-element hover:text-primary"><span class="material-symbols-outlined text-primary text-[18px]">mail</span> contact@gnixy.com</a>
+            <div class="flex flex-col gap-4 mt-6">
+                <div class="flex items-start gap-3 group interactive-element">
+                    <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors shrink-0">
+                        <span class="material-symbols-outlined text-[20px]">location_on</span>
+                    </div>
+                    <div>
+                        <p class="text-[14px] font-semibold text-on-surface mb-0.5">Văn phòng chính</p>
+                        <p class="text-[15px] text-on-surface-variant leading-snug">Số 24B, Cao Xuân Huy, Từ Liêm, Hà Nội</p>
+                    </div>
+                </div>
+                <a href="tel:+84912083463" class="flex items-start gap-3 group interactive-element">
+                    <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors shrink-0">
+                        <span class="material-symbols-outlined text-[20px]">call</span>
+                    </div>
+                    <div>
+                        <p class="text-[14px] font-semibold text-on-surface mb-0.5">Hotline</p>
+                        <p class="text-[15px] text-on-surface-variant leading-snug">+84 912 083 463</p>
+                    </div>
+                </a>
+                <a href="mailto:contact@gnixy.com" class="flex items-start gap-3 group interactive-element">
+                    <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors shrink-0">
+                        <span class="material-symbols-outlined text-[20px]">mail</span>
+                    </div>
+                    <div>
+                        <p class="text-[14px] font-semibold text-on-surface mb-0.5">Email liên hệ</p>
+                        <p class="text-[15px] text-on-surface-variant leading-snug">contact@gnixy.com</p>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="space-y-md">

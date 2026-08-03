@@ -49,10 +49,39 @@ I want API to use email configuration like this:
         "encryption": "SSL",
         "name": "Gnixy",
         "login": "contact@hearme.vn",
-        "password": "eoljeldzobeeicry",
+        "password": "xxxxxx",
     }
 
 and sending mail must use SSL protocol
 
-# /gsd-fast deployment
+# /gsd-fast Update page with following information
 
+Các CTA:
+- 🚀 Đồng hành sáng lập
+- 🤝 Hợp tác Phát triển
+- 💰 Cơ hội Đầu tư
+
+
+KIẾN TẠO HỆ THỐNG CHĂM SÓC SỨC KHỎE TƯƠNG LAI
+Doctor Genie là nơi hội tụ của chuyên gia, AI, Robot, dữ liệu, phục vụ khỏe con người tốt hơn
+Tương lai không được xây dựng bởi một doanh nghiệp
+Chúng tôi đang xây dựng cộng đồng của những bác sĩ, chuyên gia, nhà đầu tư và những người yêu công nghệ cùng nhau thay đổi tương lai y tế Việt Nam.
+
+
+# /gsd-fast Update page Menu with following items
+- Tầm nhìn
+- Giải pháp - link to products
+    1. AI Doctor
+    2. My Doctor
+    3. Gnixy AI
+    4. Hearme
+- Hệ sinh thái
+- Cùng kiến tạo
+- Liên hệ
+
+# /gsd-fast: in the mobile, let create page Menu with icon on the header right side
+
+# /gsd-fast: in the mobile, session: "Bác sĩ AI", let swap positions of two clomuns for each other
+
+# /gsd-fast: Let redesign session: "KIẾN TẠO HỆ THỐNG CHĂM SÓC SỨC KHỎE TƯƠNG LAI"
+Make the descriptive text visual better
