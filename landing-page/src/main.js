@@ -16,6 +16,8 @@ const observer = new IntersectionObserver((entries) => {
 
 if (hero) observer.observe(hero);
 
+import { applyLanguage } from './i18n.js';
+
 // Smooth scroll for nav links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
@@ -209,3 +211,6 @@ window.openModal = openModal;
 window.closeModal = closeModal;
 window.closeModalOnBackdrop = closeModalOnBackdrop;
 window.handleFormSubmit = handleFormSubmit;
+window.switchLanguage = (lang) => {
+  applyLanguage(lang);
+};
