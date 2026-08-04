@@ -50,6 +50,14 @@
             <a class="nav-link text-[16px] leading-[24px] text-on-surface-variant hover:text-primary transition-all duration-300" href="#ecosystem">Hệ sinh thái</a>
             <a class="nav-link text-[16px] leading-[24px] text-on-surface-variant hover:text-primary transition-all duration-300" href="#join">Cùng kiến tạo</a>
             <a class="nav-link text-[16px] leading-[24px] text-on-surface-variant hover:text-primary transition-all duration-300" href="#footer">Liên hệ</a>
+            <div class="flex items-center gap-2 border-l border-outline-variant/30 pl-4 ml-2">
+                <button onclick="switchLanguage('vi')" class="lang-btn active hover:opacity-80 transition-opacity" data-lang="vi" title="Tiếng Việt">
+                    <img src="https://flagcdn.com/w40/vn.png" alt="VN" class="w-6 h-4 rounded-sm object-cover shadow-sm">
+                </button>
+                <button onclick="switchLanguage('en')" class="lang-btn hover:opacity-80 transition-opacity grayscale opacity-50" data-lang="en" title="English">
+                    <img src="https://flagcdn.com/w40/us.png" alt="EN" class="w-6 h-4 rounded-sm object-cover shadow-sm">
+                </button>
+            </div>
         </div>
         <!-- Mobile Menu Button -->
         <button id="mobile-menu-btn" class="lg:hidden text-on-surface hover:text-primary transition-colors flex items-center justify-center">
@@ -59,6 +67,14 @@
     <!-- Mobile Menu Panel -->
     <div id="mobile-menu" class="lg:hidden fixed top-20 left-0 w-full bg-white shadow-lg border-t border-outline-variant/20 transition-all duration-300 max-h-0 overflow-hidden opacity-0">
         <div class="flex flex-col py-4 px-5 space-y-4">
+            <div class="flex items-center gap-3 pb-3 border-b border-outline-variant/20">
+                <button onclick="switchLanguage('vi')" class="lang-btn-mobile active flex items-center gap-2 px-3 py-1.5 bg-primary/10 text-primary rounded-lg font-semibold text-[14px]" data-lang="vi">
+                    <img src="https://flagcdn.com/w40/vn.png" alt="VN" class="w-6 h-4 rounded-sm object-cover"> Tiếng Việt
+                </button>
+                <button onclick="switchLanguage('en')" class="lang-btn-mobile flex items-center gap-2 px-3 py-1.5 text-on-surface-variant hover:bg-surface-container-low rounded-lg font-semibold text-[14px] opacity-60" data-lang="en">
+                    <img src="https://flagcdn.com/w40/us.png" alt="EN" class="w-6 h-4 rounded-sm object-cover"> English
+                </button>
+            </div>
             <a class="mobile-nav-link text-[16px] font-semibold text-on-surface-variant hover:text-primary" href="#tam-nhin">Tầm nhìn</a>
             <div class="space-y-2">
                 <p class="text-[16px] font-semibold text-on-surface-variant">Giải pháp</p>
@@ -365,7 +381,7 @@
 <!-- Footer -->
 <footer id="footer" class="bg-surface-container-low w-full py-12 md:py-xl border-t border-outline-variant/30 reveal-hidden">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-5 md:px-margin-desktop max-w-[80rem] mx-auto items-start">
-        <div class="space-y-6 col-span-1 md:col-span-2 lg:pr-12">
+        <div class="space-y-6 col-span-1 md:col-span-2 lg:pr-12 order-2 md:order-1">
             <img alt="Doctor Genie Logo" class="h-12 w-auto interactive-element hover:opacity-80" src="/images/genie_logo.png">
             <p class="text-[16px] text-on-surface-variant leading-relaxed max-w-[32rem]">
                 Doctor Genie là đơn vị tiên phong trong việc kiến tạo hệ sinh thái y tế thông minh, kết hợp giữa AI và trải nghiệm người dùng tối ưu. Chúng tôi hướng tới sứ mệnh bảo vệ sức khỏe cho mọi gia đình Việt.
@@ -400,7 +416,7 @@
                 </a>
             </div>
         </div>
-        <div class="space-y-md">
+        <div class="space-y-md order-1 md:order-2">
             <h4 class="text-[14px] text-primary font-bold">HỆ SINH THÁI</h4>
             <ul class="space-y-sm">
                 <li><a class="text-[16px] text-on-surface-variant hover:text-primary interactive-element" href="#ai-doctor">AI Doctor</a></li>
